@@ -1,0 +1,6 @@
+[submodule "client"]
+	path = client
+	url = https://github.gatech.edu/HDAP/report-type-mapper-client.git
+[submodule "api"]
+	path = api
+	url = https://github.gatech.edu/HDAP/report-type-mapper-api.git
