@@ -18,7 +18,7 @@ services:
     volumes:
       - 'pgdata:/var/lib/postgresql/data/'
   api:
-    image: ${PRIVATE_REGISTRY}/rtm-api
+    # image: ${PRIVATE_REGISTRY}/rtm-api:rtm-api
     build: ./api
     container_name: RTM_Backend
     ports:
@@ -31,7 +31,7 @@ services:
       - NODE_ENV=development
     command: "pm2-runtime app.js"
   client:
-    image: ${PRIVATE_REGISTRY}/rtm-client
+    # image: ${PRIVATE_REGISTRY}/rtm-client:rtm-api
     build: ./client
     container_name: RTM_Frontend
     command: "npm start"
