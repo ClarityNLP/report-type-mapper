@@ -22,7 +22,7 @@ services:
     build: ./api
     container_name: RTM_Backend
     ports:
-      - "1337:1337"
+      - "1338:1337"
     depends_on:
       - postgres
       - redis
