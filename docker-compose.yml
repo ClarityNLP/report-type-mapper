@@ -31,14 +31,15 @@ services:
     # env_file: .env
     environment:
       - NODE_ENV=development
-  client:
-    build: ./client
-    container_name: RTM_Frontend
-    volumes:
-      - ./client:/app
-    command: "npm start"
-    ports:
-      - "8000:8000"
+  # client:
+  #   build:
+  #     context: ./client
+  #     dockerfile: Dockerfile
+  #   container_name: RTM_Frontend
+  #   volumes:
+  #     - ./client:/app
+  #   ports:
+  #     - "8000:8000"
   redis:
     image: redis:3.2.0
     container_name: RTM_Redis

@@ -28,13 +28,15 @@ services:
       - redis
     # env_file: .env
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=production
     command: "pm2-runtime app.js"
   client:
     # image: ${PRIVATE_REGISTRY}/rtm-client:rtm-api
-    build: ./client
+    build:
+      context: ./client
+      dockerfile: Dockerfile.prod
     container_name: RTM_Frontend
-    command: "npm start"
+    container_name: RTM_Frontend
     ports:
       - "80:8000"
   redis:
