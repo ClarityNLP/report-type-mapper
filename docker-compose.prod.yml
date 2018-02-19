@@ -48,6 +48,6 @@ services:
     image: swaggerapi/swagger-ui
     container_name: RTM_Swagger_Docs
     environment:
-    - "API_URL=http://report-type-mapper.hdap.gatech.edu:1337/v1/swagger.json"
+    - "API_URL=http://report-type-mapper.hdap.gatech.edu:1338/v1/swagger.json"
     ports:
       - "3000:8080"
