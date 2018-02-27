@@ -5,7 +5,7 @@ volumes:
   redisdata:
 
 services:
-  postgres:
+  mapper-pg:
     image: postgres
     #restart: always
     container_name: 'RTM_POSTGRES'
@@ -14,7 +14,7 @@ services:
       POSTGRES_USER: sails
       POSTGRES_DB: report-type-mapper
     ports:
-      - "5432:5432"
+      - "5432:5444"
     volumes:
       - 'pgdata:/var/lib/postgresql/data/'
   api:
