@@ -24,7 +24,7 @@ services:
     ports:
       - "1338:1337"
     depends_on:
-      - postgres
+      - mapper-pg
       - redis
     # env_file: .env
     environment:
