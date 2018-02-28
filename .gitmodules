@@ -4,3 +4,6 @@
 [submodule "api"]
 	path = api
 	url = https://github.gatech.edu/HDAP/report-type-mapper-api.git
+[submodule "auto-mapper"]
+	path = auto-mapper
+	url = https://github.gatech.edu/HDAP/report-tagging.git
