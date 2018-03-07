@@ -34,9 +34,9 @@ pipeline{
                 //as the latest version.
                 script{
                     docker.withRegistry('https://apps2.hdap.gatech.edu'){
-                        def rtmApiImage = docker.build("rtm-api:1.0", "-f api/Dockerfile api")
+                        def rtmApiImage = docker.build("rtm-api:1.0", "-f ./api/Dockerfile ./api")
                         rtmApiImage.push('latest')
-                        def rtmClientImage = docker.build("rtm-client:1.0", "-f client/Dockerfile client")
+                        def rtmClientImage = docker.build("rtm-client:1.0", "-f ./client/Dockerfile ./client")
                         rtmClientImage.push('latest')
                     }
                 }
