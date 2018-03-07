@@ -1,9 +1,9 @@
 [submodule "client"]
 	path = client
-	url = https://github.gatech.edu/HDAP/report-type-mapper-client.git
+	url = git://github.gatech.edu/HDAP/report-type-mapper-client.git
 [submodule "api"]
 	path = api
-	url = https://github.gatech.edu/HDAP/report-type-mapper-api.git
+	url = git://github.gatech.edu/HDAP/report-type-mapper-api.git
 [submodule "auto-mapper"]
 	path = auto-mapper
-	url = https://github.gatech.edu/HDAP/report-tagging.git
+	url = git://github.gatech.edu/HDAP/report-tagging.git
