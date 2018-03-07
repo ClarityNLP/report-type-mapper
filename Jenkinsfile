@@ -5,23 +5,23 @@ pipeline{
     //Define stages for the build process
     stages{
         //Define the test stage
-        stage('Test'){
-            //Define the docker image to use for the test stage
-            agent{
-                docker{
-                    // specify the Docker Image to use to test the project. For example:
-                    // image 'maven:3.5.2-alpine'
-                }
-            }
-            //Write the scripts to run in the Docker container to test the application.
-            //Since this is a groovy file we use the '''string''' syntax to define multi-line formatting.
-            //Groovy will use the string EXACTLY as written in between the ''' characters. In this instance each
-            //line between the ''' characters will be treated as separate lines of a shell script.
-            steps{
-                // for example to run the tests using the Maven image in the comment above
-                // sh '''mvn test'''
-            }
-        }
+        // stage('Test'){
+        //     //Define the docker image to use for the test stage
+        //     agent{
+        //         docker{
+        //             // specify the Docker Image to use to test the project. For example:
+        //             // image 'maven:3.5.2-alpine'
+        //         }
+        //     }
+        //     //Write the scripts to run in the Docker container to test the application.
+        //     //Since this is a groovy file we use the '''string''' syntax to define multi-line formatting.
+        //     //Groovy will use the string EXACTLY as written in between the ''' characters. In this instance each
+        //     //line between the ''' characters will be treated as separate lines of a shell script.
+        //     steps{
+        //         // for example to run the tests using the Maven image in the comment above
+        //         // sh '''mvn test'''
+        //     }
+        // }
 
         //Define the deploy stage
         stage('Deploy'){
